@@ -1,11 +1,11 @@
 const sectors = [
-    {color:"#C1FF00", label:"Stack" ,strokeStyle: "#080403" ,borderWidth:2},
-    {color:"#B900FF", label:"10" ,strokeStyle:"#080403" ,borderWidth:2},
-    {color:"#00F0FF", label:"200" ,strokeStyle:"#080403" ,borderWidth:2},
-    {color:"#F7FF00", label:"50" ,strokeStyle:"#080403" ,borderWidth:2},
-    {color:"#FF64003", label:"100" ,strokeStyle:"#080403" ,borderWidth:2},
-    {color:"#f0b", label:"5" ,strokeStyle:"#080403" ,borderWidth:2},
-    {color:"#7000FF", label:"500",strokeStyle:"#080403" ,borderWidth:2},
+    {color:"#C1FF00", label:"" ,strokeStyle: "#080403" ,borderWidth:2},
+    {color:"#B900FF", label:"" ,strokeStyle:"#080403" ,borderWidth:2},
+    {color:"#00F0FF", label:"" ,strokeStyle:"#080403" ,borderWidth:2},
+    {color:"#F7FF00", label:"" ,strokeStyle:"#080403" ,borderWidth:2},
+    {color:"#FF64003", label:"" ,strokeStyle:"#080403" ,borderWidth:2},
+    {color:"#f0b", label:"" ,strokeStyle:"#080403" ,borderWidth:2},
+    {color:"#7000FF", label:"",strokeStyle:"#080403" ,borderWidth:2},
   ];
   
   // Generate random float in range min-max:
@@ -58,6 +58,7 @@ const sectors = [
     const sector = sectors[getIndex()];
     ctx.canvas.style.transform = `rotate(${ang - PI / 2}rad)`;
     elSpin.textContent = !angVel ? "SPIN" : sector.label;
+    elSpin.font = "bold 30 px comic sans ms" ;
     elSpin.style.background = sector.color;
   };
   

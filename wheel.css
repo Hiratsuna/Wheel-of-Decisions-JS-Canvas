@@ -1,9 +1,14 @@
 .wheelOfFortune {
     display: inline-flex;
     position: center;
-    overflow: none;
+    overflow: hidden;
   }
-  
+  .h1 {
+    font-family: "comic sans ms", sans-serif;
+    display: block;
+    position: relative;
+    color: yellow;
+  }
   .wheel {
     display: block;
   }
