@@ -1,0 +1,45 @@
+.wheelOfFortune {
+    display: inline-flex;
+    position: center;
+    overflow: none;
+  }
+  
+  .wheel {
+    display: block;
+  }
+  
+  .spin {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 50px 0 0 50px;
+    user-select: none;
+    cursor: pointer;
+    background: #7700ff;
+    color: #000000;
+    box-shadow: 0 0 0 8px currentColor, 0 0px 15px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 15%;
+    transition: 0.8s;
+  }
+  
+  .sectors {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    border: #000000 3px;
+  }
+  .spin::after {
+    content: "";
+    position: absolute;
+    top: -17px;
+    border: 10px solid transparent;
+    border-bottom-color: currentColor;
+    border-top: none;
+}
+
+/* Path: wheel.css */
